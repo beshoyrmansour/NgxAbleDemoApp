@@ -5,9 +5,10 @@ import { includes } from 'lodash';
 import { Logger } from './logger.service';
 import * as enUS from '../../translations/en-US.json';
 import * as frFR from '../../translations/fr-FR.json';
+import { LanguageEnum } from '@app/shared/enums/language.enum';
+import { i18nTranslator } from '@app/shared/constants/defines';
 
 const log = new Logger('I18nService');
-const languageKey = 'language';
 
 /**
  * Pass-through function to mark a string for translation extraction.
@@ -27,8 +28,8 @@ export class I18nService {
 
   constructor(private translateService: TranslateService) {
     // Embed languages to avoid extra HTTP requests
-    translateService.setTranslation('en-US', enUS);
-    translateService.setTranslation('fr-FR', frFR);
+    translateService.setTranslation(LanguageEnum.English, enUS);
+    translateService.setTranslation(LanguageEnum.French, frFR);
   }
 
   /**
@@ -43,7 +44,7 @@ export class I18nService {
     this.language = '';
 
     this.translateService.onLangChange
-      .subscribe((event: LangChangeEvent) => { localStorage.setItem(languageKey, event.lang); });
+      .subscribe((event: LangChangeEvent) => { localStorage.setItem(i18nTranslator.languageKey, event.lang); });
   }
 
   /**
@@ -53,12 +54,12 @@ export class I18nService {
    * @param {string} language The IETF language code to set.
    */
   set language(language: string) {
-    language = language || localStorage.getItem(languageKey) || this.translateService.getBrowserCultureLang();
+    language = language || localStorage.getItem(i18nTranslator.languageKey) || this.translateService.getBrowserCultureLang();
     let isSupportedLanguage = includes(this.supportedLanguages, language);
 
     // If no exact match is found, search without the region
     if (language && !isSupportedLanguage) {
-      language = language.split('-')[0];
+      language = language.split(i18nTranslator.languageSpliter)[0];
       language = this.supportedLanguages.find(supportedLanguage => supportedLanguage.startsWith(language)) || '';
       isSupportedLanguage = Boolean(language);
     }
@@ -68,7 +69,7 @@ export class I18nService {
       language = this.defaultLanguage;
     }
 
-    log.debug(`Language set to ${language}`);
+    log.debug(`${i18nTranslator.debug} ${language}`);
     this.translateService.use(language);
   }
 

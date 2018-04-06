@@ -5,7 +5,7 @@ export const CONFIG = {
 }
 export const Validation = {
     NIE:
-      '^[xyzXYZ]{1}[0-9]{7}[trwagmyfpdxbnjzsqvhlcketTRWAGMYFPDXBNJZSQVHLCKET]{1}$',
+        '^[xyzXYZ]{1}[0-9]{7}[trwagmyfpdxbnjzsqvhlcketTRWAGMYFPDXBNJZSQVHLCKET]{1}$',
     NIF: '^[0-9]{8}[trwagmyfpdxbnjzsqvhlcketTRWAGMYFPDXBNJZSQVHLCKET]{1}$',
     Passport: '',
     Numbers: /\d/gi,
@@ -24,7 +24,16 @@ export const Validation = {
     CCV: '^[0-9]{3}',
     numberOnly: '^[0-9]*$',
     msisdn: '^[6-7][0-9]{8}$'
-  };
-export const AppInfo ={
-    title:'Ngx Able Demo App'
+};
+export const AppInfo = {
+    title: 'Ngx Able Demo App'
+}
+export const SupportedLanguages = {
+    English: "English",
+    French: "French "
+}
+export const i18nTranslator={
+    languageKey :'language',
+    languageSpliter :'-',
+    debug:'Language set to '
 }
