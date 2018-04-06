@@ -1,7 +1,7 @@
 # NgxAbleDemoApp
 
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
-version 4.2.0
+version 4.2.0 then added Able Pro theme as POC and to help my team to use it in the following projects.
 
 # Getting started
 
@@ -58,7 +58,10 @@ Task                            | Description
 `npm run translations:extract`  | Extract strings from code and templates to `src/app/translations/template.json`
 `npm run docs`                  | Display project documentation
 `mddir`                         | Create directoryList.md file to contain project structure documentation
-When building the application, you can specify the target environment using the additional flag `--env <name>` (do not
+`npm run env`                   | When building the application, you can specify the target environment using the additional flag `--env <name>` (do not
+
+
+
 forget to prepend `--` to pass arguments to npm scripts).
 
 The default build environment is `prod`.
