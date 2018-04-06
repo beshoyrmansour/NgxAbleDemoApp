@@ -57,7 +57,7 @@ Task                            | Description
 `npm run lint`                  | Lint code
 `npm run translations:extract`  | Extract strings from code and templates to `src/app/translations/template.json`
 `npm run docs`                  | Display project documentation
-`mddir`                         | Create directoryList.md file to contain project structure documentation
+`mddir`                         | Create directoryList.md file to contain project structure documentation using [mddir](https://www.npmjs.com/package/mddir)
 `npm run env`                   | When building the application, you can specify the target environment using the additional flag `--env <name>` (do not
 
 
@@ -108,13 +108,25 @@ Development, build and quality processes are based on [angular-cli](https://gith
 
 #### Libraries
 
-- [Angular](https://angular.io)
-- [Bootstrap 4](https://getbootstrap.com)
 - [ng-bootsrap](https://ng-bootstrap.github.io/)
 - [Font Awesome](http://fontawesome.io)
 - [RxJS](http://reactivex.io/rxjs)
 - [ngx-translate](https://github.com/ngx-translate/core)
 - [Lodash](https://lodash.com)
+
+- [Angular 5 CLI](https://cli.angular.io/)
+- [Bootstrap 4 - Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.](https://getbootstrap.com/docs/4.0/)
+- [ng-bootstrap - Bootstrap 4 components, powered by Angular](https://ng-bootstrap.github.io/)
+- [swimlane: ngx-datatable ](http://swimlane.github.io/ngx-datatable/)
+- [Google Map](https://angular-maps.com/)
+- [Animation](https://www.npmjs.com/package/css-animation)
+- [Tag Input](http://www.buompris.co/ng2-tag-input/)
+- [screenfull - Simple wrapper for cross-browser usage of the JavaScript Fullscreen API](https://github.com/sindresorhus/screenfull.js/)
+- [ng2-file-upload - Easy to use Angular2 components for files upload](https://github.com/valor-software/ng2-file-upload)
+- [ng2-validation - angular2 validation](https://github.com/yuyang041060120/ng2-validation)
+- [Chart: ChartJs](https://www.npmjs.com/package/angular2-chartjs)
+- [Chart: C3](https://www.npmjs.com/package/c3)
+
 
 #### Coding guides
 
@@ -124,6 +136,7 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [HTML](docs/coding-guides/html.md)
 - [Unit tests](docs/coding-guides/unit-tests.md)
 - [End-to-end tests](docs/coding-guides/e2e-tests.md)
+
 
 #### Other documentation
 
