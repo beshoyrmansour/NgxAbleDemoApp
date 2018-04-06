@@ -16,7 +16,7 @@ version 4.2.0
  ```
 
 # Project structure
-
+## [directories List](directoryList.md)
 ```
 dist/                        web app production build
 docs/                        project docs and coding guides
@@ -129,3 +129,12 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [Updating dependencies and tools](docs/updating.md)
 - [Using a backend proxy for development](docs/backend-proxy.md)
 - [Browser routing](docs/routing.md)
+
+#Git Init Commands
+ ```sh
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git remote add origin https://github.com/beshoyrmansour/NgxAbleDemoApp.git
+  git push -u origin master
+ ```
