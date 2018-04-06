@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { AuthenticationService } from '../../authentication/authentication.service';
 import { I18nService } from '../../i18n.service';
+import { AppInfo } from '@app/shared/constants/defines';
 
 @Component({
   selector: 'app-header',
@@ -12,10 +13,10 @@ import { I18nService } from '../../i18n.service';
 export class HeaderComponent implements OnInit {
 
   menuHidden = true;
-
+  title = AppInfo.title;
   constructor(private router: Router,
-              private authenticationService: AuthenticationService,
-              private i18nService: I18nService) { }
+    private authenticationService: AuthenticationService,
+    private i18nService: I18nService) { }
 
   ngOnInit() { }
 

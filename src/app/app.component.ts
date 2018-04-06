@@ -7,6 +7,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 
 import { environment } from '@env/environment';
 import { Logger, I18nService } from '@app/core';
+import { AppInfo } from '@app/shared/constants/defines';
 
 const log = new Logger('App');
 
@@ -16,7 +17,7 @@ const log = new Logger('App');
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Able Pro 7 5+';
+  title = AppInfo.title ;
 
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute,

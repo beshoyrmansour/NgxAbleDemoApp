@@ -15,6 +15,8 @@ import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,7 +30,9 @@ import { AppRoutingModule } from './app-routing.module';
     HomeModule,
     LoginModule,
     Angulartics2Module.forRoot([]),
-    AppRoutingModule
+    AppRoutingModule,
+
+    BrowserAnimationsModule
   ],
   declarations: [AppComponent],
   providers: [

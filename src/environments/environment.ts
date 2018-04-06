@@ -9,6 +9,7 @@ import env from './.env';
 export const environment = {
   production: false,
   version: env.npm_package_version + '-dev',
+  /* This is the Base URL with chould be Provided from BackEnd Team as agreed */
   serverUrl: '/api',
   defaultLanguage: 'en-US',
   supportedLanguages: [
