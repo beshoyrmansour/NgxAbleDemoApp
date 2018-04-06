@@ -1,0 +1,21 @@
+{
+  "generator-ngx-rocket": {
+    "version": "4.2.0",
+    "props": {
+      "location": "path",
+      "appName": "NgxAbleDemoApp",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "bootstrap",
+      "auth": true,
+      "lazy": true,
+      "angulartics": true,
+      "analyticsProvider": "gtm",
+      "projectName": "ngx-able-demo-app",
+      "packageManager": "npm",
+      "mobile": []
+    }
+  }
+}
