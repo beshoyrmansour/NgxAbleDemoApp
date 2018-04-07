@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Route, extract } from '@app/core';
+import { Route, extract, } from '@app/core';
 import { HomeComponent } from './home.component';
+import { config } from '../../config/pages-config';
 
 const routes: Routes = [
   Route.withShell([
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent, data: { title: extract('Home') } }
+    { path: '', redirectTo: config.home.route, pathMatch: 'full' },
+    {
+      path: config.home.name,
+      component: HomeComponent,
+      data: { title: extract('Home') }
+    }
   ])
 ];
 
