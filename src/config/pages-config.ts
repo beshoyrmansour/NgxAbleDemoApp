@@ -10,13 +10,16 @@ export let config = {
             'deeplink': true,
         },
         'details': {
-            'name': 'details',
+            'path': 'details',
             'route': '/Inbox/details',
         },
     },
     'home': {
-        'name': 'home',
+        'path': 'home',
         'route': '/home',
-        'component': 'HomeComponent',
+    },
+    'login': {
+        'path': 'login',
+        'route': '/login',
     }
 }
