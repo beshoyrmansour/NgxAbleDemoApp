@@ -9,7 +9,7 @@ const routes: Routes = [
   Route.withShell([
     { path: '', redirectTo: config.home.route, pathMatch: 'full' },
     {
-      path: config.home.name,
+      path: config.home.path,
       component: HomeComponent,
       data: { title: extract('Home') }
     }

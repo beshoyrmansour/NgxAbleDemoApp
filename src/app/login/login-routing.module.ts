@@ -3,9 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { extract } from '@app/core';
 import { LoginComponent } from './login.component';
+import { config } from 'config/pages-config';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent, data: { title: extract('Login') } }
+  { path: config.login.path, component: LoginComponent, data: { title: extract('Login') } }
 ];
 
 @NgModule({
