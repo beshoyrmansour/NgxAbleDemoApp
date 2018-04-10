@@ -82,6 +82,10 @@ const routes: Routes = [
   {
     path: 'simple-page',
     loadChildren: 'app/theme/simple-page/simple-page.module#SimplePageModule'
+  },
+  {
+    path: 'chat',
+    loadChildren: 'app/chat/chat.module#ChatModule'
   }
   ,
   // Fallback when no prior route is matched

@@ -21,5 +21,20 @@ export let config = {
     'login': {
         'path': 'login',
         'route': '/login',
+    },
+    'chat': {
+        'path': 'chat',
+        'route': '/chat',
+        'loadChildren': '../app/chat/chat.module#ChatModule',
+        'permissionList': ['Authorized'],
+        'chatList': {
+            'path': 'all',
+            'route': '/all',
+            'deeplink': true,
+        },
+        'chatContent': {
+            'path': ':id',
+            'route': '/:id',
+        }
     }
 }
