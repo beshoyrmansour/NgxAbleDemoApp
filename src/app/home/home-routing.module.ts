@@ -6,14 +6,20 @@ import { HomeComponent } from './home.component';
 import { config } from '../../config/pages-config';
 
 const routes: Routes = [
-  Route.withShell([
-    { path: '', redirectTo: config.home.route, pathMatch: 'full' },
-    {
-      path: config.home.path,
-      component: HomeComponent,
-      data: { title: extract('Home') }
-    }
-  ])
+  { path: '', redirectTo: config.home.route, pathMatch: 'full' },
+      {
+        path: config.home.path,
+        component: HomeComponent,
+        data: { title: extract('Home') }
+      }
+//   Route.withShell([
+//     { path: '', redirectTo: config.home.route, pathMatch: 'full' },
+//     {
+//       path: config.home.path,
+//       component: HomeComponent,
+//       data: { title: extract('Home') }
+//     }
+//   ])
 ];
 
 @NgModule({

@@ -32,6 +32,25 @@ export interface Menu {
 
 const MENUITEMS = [
   {
+    label: 'BRM',
+    main: [
+      {
+        state: 'chat',
+        short_label: 'C',
+        name: 'Chat',
+        type: 'sub',
+        icon: 'feather icon-message-circle',
+        children: [
+          {
+            state: 'chat',
+            name: 'Chat'
+          },
+        ]
+      },
+    ]
+  },
+  
+  {
     label: 'Navigation',
     main: [
       {

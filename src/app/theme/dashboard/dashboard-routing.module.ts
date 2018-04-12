@@ -1,5 +1,5 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -9,6 +9,11 @@ const routes: Routes = [
       status: false
     },
     children: [
+      {
+        path: '',
+        redirectTo: 'default',
+        pathMatch: 'full'
+      },
       {
         path: 'default',
         loadChildren: './default/default.module#DefaultModule'
