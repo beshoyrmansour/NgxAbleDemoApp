@@ -4,5 +4,7 @@
   "editor.renderIndentGuides": true,
   "editor.letterSpacing": 1.12,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.lineHeight": 17
+  "editor.lineHeight": 17,
+  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace"
+
 }
